@@ -14,7 +14,6 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
 	// Enables the distinct flag for the query
 	List<Employee> findDistinctPeopleByLastNameOrFirstName(String lastName, String firstName);
-
 	List<Employee> findPeopleDistinctByLastNameOrFirstName(String lastName, String firstName);
 
 	// Enabling ignoring case for an individual property
